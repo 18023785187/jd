@@ -1,0 +1,396 @@
+header {
+  width: 100%;
+  height: 80px;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  padding: 10px 0;
+}
+header .header .logo {
+  display: flex;
+  width: 300px;
+  height: 60px;
+}
+header .header .logo h2 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+header .header .investigation {
+  display: flex;
+  height: 18px;
+  margin-top: 42px;
+  line-height: 18px;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+}
+header .header .investigation:hover {
+  color: #E4393C;
+  text-decoration: underline;
+}
+header .header .investigation img {
+  width: 18px;
+  height: 14px;
+  margin: 2px 5px 0 5px;
+}
+.remind {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0;
+  line-height: 18px;
+  color: #999;
+  background-color: #fff8f0;
+}
+.remind i {
+  margin-right: 5px;
+  margin-top: -1px;
+  font-size: 16px;
+}
+.remind p {
+  font-size: 12px;
+}
+.remind p a {
+  color: #333;
+}
+.remind p a:hover {
+  text-decoration: underline;
+}
+main {
+  width: 100%;
+  height: 475px;
+  margin-bottom: 20px;
+}
+main .content-image-one {
+  background-image: url(../image/Login_interface/content.jpg);
+}
+main .content-image-two {
+  background-image: url(../image/Login_interface/image-two.jpg);
+}
+main .content-image-three {
+  background-image: url(../image/Login_interface/image-three.png);
+}
+main .content-image-four {
+  background-image: url(../image/Login_interface/image-four.jpg);
+}
+main .content {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100%;
+}
+main .content .input {
+  width: 346px;
+  margin-top: 10px;
+}
+main .content .input .input-remind {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0;
+  line-height: 18px;
+  font-size: 12px;
+  color: #999;
+  background-color: #fff8f0;
+}
+main .content .input .input-remind i {
+  font-size: 16px;
+  margin-right: 5px;
+  margin-top: -1px;
+}
+main .content .input .login {
+  display: flex;
+  width: 100%;
+  height: 54px;
+  line-height: 54px;
+  text-align: center;
+  background-color: white;
+  border-bottom: 1px solid #f4f4f4;
+}
+main .content .input .login .scan-code,
+main .content .input .login .password {
+  position: relative;
+  width: 173px;
+  font-size: 18px;
+}
+main .content .input .login .scan-code a,
+main .content .input .login .password a {
+  height: 18px;
+  padding: 0 50px;
+  color: #333;
+}
+main .content .input .login .scan-code a:hover,
+main .content .input .login .password a:hover {
+  font-weight: 700;
+  color: #e4393c;
+}
+main .content .input .login .scan-code .red,
+main .content .input .login .password .red {
+  font-weight: 700;
+  color: #e4393c;
+}
+main .content .input .login .scan-code::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 1px;
+  height: 18px;
+  background-color: #f4f4f4;
+}
+main .content .input .input-content {
+  position: relative;
+}
+main .content .input .input-content .scan-code-box {
+  position: absolute;
+  z-index: 2;
+}
+main .content .input .input-content .scan-code-box .scan-code-content {
+  width: 306px;
+  height: 255px;
+  padding: 30px 20px 5px 20px;
+  background-color: white;
+}
+main .content .input .input-content .scan-code-box .scan-code-content .img-box {
+  position: relative;
+  width: 100%;
+}
+main .content .input .input-content .scan-code-box .scan-code-content .img-box .img {
+  width: 155px;
+  height: 147px;
+  padding: 8px;
+  margin: 0 auto;
+  border: 1px solid #f4f4f4;
+  transition: all 0.4s;
+}
+main .content .input .input-content .scan-code-box .scan-code-content .img-box .img img {
+  margin-left: 4px;
+}
+main .content .input .input-content .scan-code-box .scan-code-content .img-box .phone {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 141px;
+  height: 168px;
+  background-image: url(../image/Login_interface/phone-orange.png);
+  opacity: 0;
+}
+main .content .input .input-content .scan-code-box .scan-code-content .open-app {
+  width: 257px;
+  height: 18px;
+  margin: 18px auto 14px auto;
+  line-height: 18px;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+}
+main .content .input .input-content .scan-code-box .scan-code-content .open-app a {
+  color: #e4393c;
+}
+main .content .input .input-content .scan-code-box .scan-code-content .introduce {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 25px;
+}
+main .content .input .input-content .scan-code-box .scan-code-content .introduce li {
+  display: flex;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+}
+main .content .input .input-content .scan-code-box .scan-code-content .introduce li:nth-child(1) {
+  margin-right: 18px;
+}
+main .content .input .input-content .scan-code-box .scan-code-content .introduce li:nth-child(2) {
+  margin-right: 18px;
+}
+main .content .input .input-content .scan-code-box .scan-code-content .introduce li:nth-child(2) i {
+  background-position: -27px;
+}
+main .content .input .input-content .scan-code-box .scan-code-content .introduce li:nth-child(3) i {
+  background-position: -54px;
+}
+main .content .input .input-content .scan-code-box .scan-code-content .introduce li i {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  background-image: url(../image/Login_interface/qr-coagent.png);
+}
+main .content .input .input-content .scan-code-box .scan-code-content .introduce li span {
+  display: block;
+  text-align: center;
+}
+main .content .input .input-content .password-box {
+  position: absolute;
+  display: none;
+  z-index: 1;
+}
+main .content .input .input-content .password-box .passwprd-content {
+  width: 306px;
+  padding: 0px 20px 30px 20px;
+  background-color: white;
+}
+main .content .input .input-content .password-box .passwprd-content .tips {
+  width: 306px;
+  height: 23px;
+  margin: 5px 0;
+}
+main .content .input .input-content .password-box .passwprd-content form {
+  width: 306px;
+  height: 192px;
+}
+main .content .input .input-content .password-box .passwprd-content form .form-i {
+  position: relative;
+  width: 304px;
+  height: 38px;
+  margin-bottom: 20px;
+  border: 1px solid #bdbdbd;
+}
+main .content .input .input-content .password-box .passwprd-content form .form-i .icon {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  border-right: 1px solid #bdbdbd;
+  background-image: url(../image/Login_interface/pwd-icons-new.png);
+}
+main .content .input .input-content .password-box .passwprd-content form .form-i .p {
+  background-position: -48px 0;
+}
+main .content .input .input-content .password-box .passwprd-content form .form-i input {
+  position: absolute;
+  width: 265px;
+  height: 38px;
+  outline: none;
+  border: none;
+  padding: 10px 0 10px 10px;
+  font-size: 14px;
+  color: #666;
+  box-sizing: border-box;
+}
+main .content .input .input-content .password-box .passwprd-content form .form-i i {
+  position: absolute;
+  right: 5px;
+  top: 12px;
+  display: none;
+  width: 14px;
+  height: 14px;
+  background-image: url(../image/Login_interface/pwd-icons-new.png);
+  background-position: -26px -143px;
+  cursor: pointer;
+}
+main .content .input .input-content .password-box .passwprd-content form .retrieve {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 306px;
+  height: 18px;
+  line-height: 18px;
+  font-size: 12px;
+}
+main .content .input .input-content .password-box .passwprd-content form .retrieve a {
+  color: #666;
+}
+main .content .input .input-content .password-box .passwprd-content form .retrieve a:hover {
+  text-decoration: underline;
+  color: #E4393C;
+}
+main .content .input .input-content .password-box .passwprd-content form button {
+  display: block;
+  width: 306px;
+  height: 34px;
+  margin-top: 20px;
+  border: 1px solid #e85356;
+  font-size: 20px;
+  color: white;
+  background-color: #e4393c;
+  box-sizing: border-box;
+}
+main .content .input .input-content .submit {
+  display: flex;
+  justify-content: space-between;
+  width: 306px;
+  height: 50px;
+  padding: 0 20px;
+  line-height: 50px;
+  border-top: 1px solid #f4f4f4;
+  background-color: #fcfcfc;
+}
+main .content .input .input-content .submit .qq-weixin {
+  display: flex;
+  font-size: 12px;
+}
+main .content .input .input-content .submit .qq-weixin li a {
+  display: flex;
+  color: #666;
+}
+main .content .input .input-content .submit .qq-weixin li a i {
+  display: inline-block;
+  width: 19px;
+  height: 18px;
+  margin-top: 15px;
+  margin-right: 5px;
+  background-image: url(../image/Login_interface/QQ-weixin.png);
+}
+main .content .input .input-content .submit .qq-weixin li a .weixin {
+  background-position: -20px 0;
+}
+main .content .input .input-content .submit .qq-weixin li a p:hover {
+  color: #E4393C;
+  text-decoration: underline;
+}
+main .content .input .input-content .submit .qq-weixin span {
+  padding: 0 10px;
+  color: #ccc;
+}
+main .content .input .input-content .submit .register a {
+  display: flex;
+  height: 16px;
+  font-size: 15px;
+  font-weight: 100;
+  text-align: center;
+  color: #b61d1d;
+}
+main .content .input .input-content .submit .register a i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-top: 18px;
+  margin-right: 5px;
+  background-image: url(../image/Login_interface/pwd-icons-new.png);
+  background-position: -104px -75px;
+}
+main .content .input .input-content .submit .register a p:hover {
+  text-decoration: underline;
+}
+footer {
+  height: 56px;
+  padding-bottom: 30px;
+}
+footer .links {
+  width: 100%;
+  line-height: 18px;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+}
+footer .links a {
+  color: #666;
+  margin: 0 10px;
+}
+footer .links a:hover {
+  text-decoration: underline;
+  color: #E4393C;
+}
+footer .state {
+  width: 100%;
+  margin: 10px 0;
+  line-height: 18px;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+}
+/*# sourceMappingURL=./Login_interface.css.map */
