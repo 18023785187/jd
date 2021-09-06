@@ -5,5 +5,5 @@
 
 # demo
 <div>
-  <iframe src="//player.bilibili.com/player.html?aid=847794963&bvid=BV1LL4y1h73m&cid=403837466&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+  <video src='asdsad'></video>
 </div>
